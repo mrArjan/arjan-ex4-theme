@@ -1,0 +1,177 @@
+
+.container1 {
+    position: relative;
+    
+    height: 200px;
+    display: inline-block;
+    img{
+        width: 100%;
+        height:200px;
+        display: block;
+        // position: relative;
+    }
+}
+
+.carde4{
+    img{
+        height: 375px;
+    }
+}
+
+.carousel-item{
+
+    background-color: white;
+}
+
+.glyphicon{
+    transition: ease-in-out 0.4s;
+    color: black;
+    width: 40px;
+    height: 40px;
+}
+
+.glyphicon :hover{
+    width: 40px;
+    height: 40px;
+    color: blue;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #ff946bbd;
+}
+.overlay {
+    position: absolute;
+    opacity: 0.2;
+    transition:all .3s ease;
+    background-color: #424b5a;
+ 
+}
+.container1:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+}
+
+.overlayLeft{
+    height: 100%;
+    width:0;
+    top:0;
+    left:0;
+
+}
+.overlayRight{
+    height: 100%;
+    width: 0;
+    top:0;
+    right:0;
+ 
+}
+.container1:hover .overlayLeft ,.container1:hover .overlayRight {
+    width: 100%;
+}
+.overlayTop{
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+
+}
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+   
+}
+.container1:hover .overlayTop ,.container:hover .overlayBottom {
+    height: 100%;
+}
+.overlayCross{
+    width: 0%;
+    height: 0;
+    top:0;
+    left:0;
+    // background-color: #e47a52;
+}
+.container1:hover .overlayCross {
+    height: 100%;
+    width: 100%;
+    .text{
+        display: block;
+    }
+    
+}
+
+.img1-ecommerce{
+             width: 60px;
+            height: 60px;
+    img{
+            width: 60px;
+            height: 60px;
+    }
+}
+.card-mainimage{
+    img{
+        height: 375px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.card-text1{
+    p{
+        font-size: 13px;
+    }
+}
+
+.carde4{
+    img{
+        height:375px;
+    }
+}
+
+.card-discount{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #424b5a;
+    h5{
+    color: white; 
+    line-height: 29px;
+    }
+}
+
+.ecommerce8 img{
+   height:  275px;
+   width: 100%;
+}
+
+.ecommerce9 img{
+    height: 263px;
+    width: 100%;
+}
+
+.ecommerce10 img{
+    height: 480px;
+    width: 100%;
+}
+
+.wrapper6{
+    width: 500px;
+
+    img{
+        width: 100%;
+    }
+}

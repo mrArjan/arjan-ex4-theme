@@ -1,0 +1,134 @@
+// Extra large devices (large desktops, 1200px and DOWN)
+@media screen and (max-width: 1024px) { 
+    .button-bg1{
+        font-size: 12px;
+    }
+    .card-blog6-img2 img{
+        height: 170px !important;
+
+    }
+    .item-3{
+        display: none;
+    }
+ }
+
+ // Large devices (desktops, 992px and DOWN)
+@media screen and (max-width: 992px) { 
+    .button-bg1{
+        font-size: 12px;
+    }
+    
+    .card-blog6-texts{
+        h1{
+            font-size: 20px;
+            color: #505d68;
+        }
+        h4{
+            font-size: 13px;
+            color: #505d68;
+        }
+    }
+    .item-3{
+        display: none;
+    }
+
+    
+ }
+ // Medium devices (tablets, 768px and DOWN)
+@media screen and (max-width: 768px) {
+    .button-bg1{
+        font-size: 11px;
+        padding: 9px 30px;
+    }
+    body{
+        font-size: 11px;      
+    }
+    .tablet-hide1{
+        display: none;
+    }
+    .card-wrapper{
+        max-width: 33% ;
+    }
+    .blog5{
+        h5{
+            font-size: 9px;
+        }
+        h4{
+            font-size: 11px;
+        }
+    }
+    .card-blog6-texts{
+        h1{
+            font-size: 15px ;
+            color: #505d68;
+        }
+        h4{
+            font-size: 11px ;
+            color: #505d68;
+        }
+    }
+
+    .cardtitle-blog9{
+        h3{
+            font-size: 12px;
+        }
+    }
+    .item-3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) { 
+    .button-bg1{
+        font-size: 9px;
+    }
+
+    .card-wrapper{
+        max-width: 100% !important;
+    }
+    
+
+    .card-blog6-texts{
+        h1{
+            font-size: 15px !important;
+            color: #505d68 !important;
+        }
+        h4{
+            font-size: 11px  !important;
+            color: #505d68 !important;
+        }
+    }
+
+    .cardtitle-blog9{
+        h3{
+            font-size: 9px;
+        }
+    }
+
+    .ecommerce1{
+        h3{
+            font-size: 15px;
+        }
+        h5{
+            font-size: 10px;
+        }
+    }
+
+    .item-2{
+        display: none;
+    }
+
+    .item-3{
+        display:block;
+    }
+   
+ }
+
+
+
+
+
+
+
+

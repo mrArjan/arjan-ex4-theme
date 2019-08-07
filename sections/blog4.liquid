@@ -1,0 +1,211 @@
+<div class="container-fluid bg-container mt-5">
+
+    <div class="container p-5 bg2-container">
+      <div class="row" style="width:100%;">
+        <div class="col-lg-6">
+            <h1 class="text-left ">{{ section.settings.title-text}}</h1>
+        </div>
+        <div class="col-lg-4">
+            <h4 class="text-left text-muted">{{ section.settings.blog-description4}}</h4>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-between">
+        <div class="card card-4  col-sm col-xm-3 " style=" height:400px; margin:5px 10px;">
+            <div class="row">
+                <div class="col-sm">
+            <h5 class="card-title">{{ section.settings.blog-title }}</h5>
+        </div>
+       
+        </div>
+            <img class="card-img-top img-top" src="{{ section.settings.teamPhoto1 | img_url: 'large' }}" alt="Card image cap">
+            <div class="card-body" style="padding: 0 16px 0 0;">
+                <div class="row">
+              <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title1 }}</span>
+            </div>
+            <div class="row">
+              <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title2 }}</span>
+            </div>
+            <div class="row">
+              <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title3 }}</span>
+            </div>
+              <p class="card-text"> <small class="text-muted">{{ section.settings.description-text }}</p>
+              </small>
+            </div>
+          </div>
+
+          <div class="card card-4  col-sm col-xm-3 " style=" height:400px; margin:5px 10px;">
+                <div class="row">
+                    <div class="col-sm">
+                <h5 class="card-title">{{ section.settings.blog-title }}</h5>
+            </div>
+           
+            </div>
+                <img class="card-img-top img-top" src="{{ section.settings.teamPhoto2 | img_url: 'large' }}" alt="Card image cap">
+                <div class="card-body" style="padding: 0 16px 0 0;">
+                    <div class="row">
+                  <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title4}}</span>
+                </div>
+                <div class="row">
+                  <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title5 }}</span>
+                </div>
+                <div class="row">
+                  <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title6 }}</span>
+                </div>
+                  <p class="card-text"> <small class="text-muted">{{ section.settings.description-text }}</p>
+                  </small>
+                </div>
+              </div>
+
+              <div class="card card-4  col-sm col-xm-3 " style=" height:400px; margin:5px 10px;">
+                    <div class="row">
+                        <div class="col-sm">
+                    <h5 class="card-title">{{ section.settings.blog-title }}</h5>
+                </div>
+               
+                </div>
+                    <img class="card-img-top img-top" src="{{ section.settings.teamPhoto3 | img_url: 'large' }}" alt="Card image cap">
+                    <div class="card-body" style="padding: 0 16px 0 0;">
+                        <div class="row">
+                      <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title7 }}</span>
+                    </div>
+                    <div class="row">
+                      <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title8 }}</span>
+                    </div>
+                    <div class="row">
+                      <span class="card-title col-sm  " style="margin: 0; padding: 10px 5px; border-bottom: 1px solid black;">{{ section.settings.blog-title9 }}</span>
+                    </div>
+                      <p class="card-text"> <small class="text-muted">{{ section.settings.description-text }}</p>
+                      </small>
+                    </div>
+                  </div>
+
+    </div>
+
+    </div>
+
+    </div>
+    
+
+    {% schema %}
+{
+  "name": "Blog 4",
+	"max_blocks": 4,
+  "settings": [
+    {
+      "id": "title-text",
+      "type": "text",
+      "label": "Blog Title",
+      "default": "Title"
+    },
+    {
+        "id": "blog-description4",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "teamPhoto1",
+        "label": "Team Photo image"
+      },
+      {
+        "id": "blog-title1",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+      ,
+      {
+        "id": "blog-title2",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+      ,
+      {
+        "id": "blog-title3",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "teamPhoto2",
+        "label": "Team Photo image"
+      }
+      ,
+      {
+        "id": "blog-title4",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+      ,
+      {
+        "id": "blog-title5",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+      ,
+      {
+        "id": "blog-title6",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "teamPhoto3",
+        "label": "Team Photo image"
+      }
+      ,
+      {
+        "id": "blog-title7",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+      ,
+      {
+        "id": "blog-title8",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+      ,
+      {
+        "id": "blog-title9",
+        "type": "text",
+        "label": "Blog Description  ",
+        "default": "Description"
+      }
+
+    
+
+      
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+     
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 4",
+      "category": "Blog",
+      "blocks": [
+    
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

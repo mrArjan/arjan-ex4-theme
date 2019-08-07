@@ -1,0 +1,46 @@
+@media screen and (max-width: 1024px) {
+  .circ12:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid #505d68;
+    top: 26px;
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .circ12:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 1px solid #505d68;
+    top: 26px;
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circ12:after {
+    content: "";
+    position: absolute;
+    height: 9px;
+    border-top: 1px solid #505d68;
+    top: 23px;
+    width: 150px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .circ12:after {
+    content: "";
+    position: absolute;
+    height: 9px;
+    border-top: 1px solid #505d68;
+    top: 23px;
+    width: 90px;
+    line-height: 48px;
+  }
+}
+/*# sourceMappingURL=media-howitworks.css.map */

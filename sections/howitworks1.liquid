@@ -1,0 +1,154 @@
+<div class="container-fluid bg-container">
+    <div class="container">
+             <div class="text-center pt-4 pb-4">
+                 <h2 class="text-center text-uppercase">{{ section.settings.howitworks1-maintitle1}}</h2>
+             </div>
+             
+
+             <div class="row d-flex justify-content-center">
+
+
+                 <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-12 border-xs border-0">
+                        <div class="card-img-top howitworks1 p-5">
+                            <img src="{{ section.settings.howitworks1-img1 | img_url: 'large' }}" alt="Product Image" class="image" style="position: relative;">
+                        </div>
+               
+                 <div class="card-title text-center p-0">
+                     <h5 class="text-center">{{ section.settings.howitworks-steps1 }}</h5>
+                 </div>
+                 <div class="card-text text-center p-0 m-0" style="overflow: hidden">
+                  <p><small>{{ section.settings.howitworks-description1 }}</small> </p>  
+                 </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-12 border-xs border-0">
+                        <div class="card-img-top howitworks1 p-5">
+                            <img src="{{ section.settings.howitworks1-img2 | img_url: 'large' }}" alt="Product Image" class="image" style="position: relative;">
+                        </div>
+               
+                 <div class="card-title text-center p-0">
+                     <h5 class="text-center">{{ section.settings.howitworks-steps2 }}</h5>
+                 </div>
+                 <div class="card-text text-center p-0 m-0" style="overflow: hidden">
+                  <p><small>{{ section.settings.howitworks-description2 }}</small> </p>  
+                 </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-4 col-sm-4 col-xs-12 border-xs border-0">
+                        <div class="card-img-top howitworks1 p-5">
+                            <img src="{{ section.settings.howitworks1-img3 | img_url: 'large' }}" alt="Product Image" class="image" style="position: relative;">
+                        </div>
+               
+                 <div class="card-title text-center p-0">
+                     <h5 class="text-center">{{ section.settings.howitworks-steps3 }}</h5>
+                 </div>
+                 <div class="card-text text-center p-0 m-0" style="overflow: hidden">
+                  <p><small>{{ section.settings.howitworks-description3 }}</small> </p>  
+                 </div>
+                </div>
+
+                
+             </div>
+
+             <div class="small text-center pt-5 pb-5"><u>
+                 Learn more
+             </u></div>
+    
+    
+    
+    </div>
+        </div>
+
+
+        {% schema %}
+{
+  "name": "How it works 1",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "howitworks1-maintitle1",
+    "type": "text",
+    "label": "Main Title",
+    "default": "How it works"
+  },
+  {
+    "type": "image_picker",
+    "id": "howitworks1-img1",
+    "label": "Card Image"
+  },
+  {
+    "id": "howitworks-steps1",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Install"
+  },
+  {
+    "id": "howitworks-description1",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "howitworks1-img2",
+    "label": "Card Image"
+  },
+  {
+    "id": "howitworks-steps2",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Install"
+  },
+  {
+    "id": "howitworks-description2",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "howitworks1-img3",
+    "label": "Card Image"
+  },
+  {
+    "id": "howitworks-steps3",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Install"
+  },
+  {
+    "id": "howitworks-description3",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works 1",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

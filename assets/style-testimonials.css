@@ -1,0 +1,43 @@
+.pic-test-1 {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  background-color: #f2f5f7;
+}
+
+.card-circle {
+  width: 154px;
+  height: 235px;
+  border-radius: 154px;
+}
+
+.test6 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.test6 img:hover {
+  border: 2px solid cyan;
+}
+
+.testi7 img {
+  height: 170px;
+  border-radius: 100px;
+  width: 170px;
+}
+
+.testi8 .card {
+  background-color: #f2f5f7;
+  color: #a1aeb7;
+}
+
+.testi9 .card {
+  background-color: #f2f5f7;
+  color: #a9b5bd;
+}
+
+.testi9 .card .subtitle9 {
+  color: #a6adb2;
+}
+/*# sourceMappingURL=style-testimonials.css.map */

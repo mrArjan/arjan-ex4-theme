@@ -1,0 +1,165 @@
+<div class="container-fluid bg-container  mt-5" >
+    <div class="container">
+
+        <div class="row">
+        <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h2 class=" font-weight-bold mb-5">
+                {{ section.settings.testimonials8-title1}}
+            </h2>
+          </div>
+<!-- 
+          <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex flex-row pt-lg-5 pt-sm-3  float-lg-right float-md-center float-sm-center">
+             
+                <i class="fas fa-arrow-left      text-right text-muted float-lg-right d-flex align-items-center"></i>    
+            <i class="fas fa-arrow-right  text-right text-muted float-lg-right d-flex align-items-center"></i>
+   
+              </div> -->
+        </div>  
+
+
+        <div class="row d-flex justify-content-center mb-5">
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 testi8">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p>
+                            {{ section.settings.testi8-text1}}
+                            </p>
+                        </div>
+
+                        <div class="text-subtitle d-flex flex-row align-items-end">
+                                <i class="fab fa-twitter"></i>
+
+                                <p class="d-flex align-items-end">@{{ section.settings.testi8-author1}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 testi8">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>
+                                {{ section.settings.testi8-text2}}
+                                </p>
+                            </div>
+    
+                            <div class="text-subtitle d-flex flex-row align-items-end">
+                                    <i class="fab fa-twitter"></i>
+    
+                                    <p class="d-flex align-items-end">@{{ section.settings.testi8-author2}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 testi8">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <p>
+                                    {{ section.settings.testi8-text3}}
+                                    </p>
+                                </div>
+        
+                                <div class="text-subtitle d-flex flex-row align-items-end">
+                                        <i class="fab fa-twitter"></i>
+        
+                                        <p class="d-flex align-items-end">@{{ section.settings.testi8-author3}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+     </div>
+</div>
+          
+
+{% schema %}
+{
+  "name": "Testimonials 8",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "testimonials8-title1",
+    "type": "text",
+    "label": "Main Title",
+    "default": "Why do people love form"
+  },
+  {
+    "id": "testi8-text1",
+    "type": "text",
+    "label": "Tweet",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+  {
+    "id": "testi8-author1",
+    "type": "text",
+    "label": "Author 1",
+    "default": "swayze_aguilar"
+  },
+  {
+    "id": "testi8-text2",
+    "type": "text",
+    "label": "Tweet",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+  {
+    "id": "testi8-author2",
+    "type": "text",
+    "label": "Author 2",
+    "default": "swayze_aguilar"
+  },
+
+  {
+    "id": "testi8-text3",
+    "type": "text",
+    "label": "Tweet",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+  {
+    "id": "testi8-author3",
+    "type": "text",
+    "label": "Author 3",
+    "default": "swayze_aguilar"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials 8",
+      "category": "Testimonials",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

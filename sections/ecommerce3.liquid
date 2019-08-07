@@ -1,0 +1,211 @@
+<div class="container-fluid bg-container">
+        <div class="container p-lg-4 p-2">
+
+          <div class="row d-flex justify-content-center">
+            <div class="card d-flex flex-lg-row flex-md-row flex-sm-column flex-xs-column">
+
+                <div id="carouselExampleIndicators" class="carousel slide card-img-top col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0 " data-ride="carousel">
+
+
+                    <div class="carousel-inner">
+
+                <div class="card-mainimage carousel-item active">
+                    <img src="{{ section.settings.eCard3-img1-main | img_url: 'large' }}" alt="Product Image" class="First slide">
+                </div>
+
+                <div class="card-mainimage carousel-item ">
+                    <img src="{{ section.settings.eCard3-img2-main | img_url: 'large' }}" alt="Product Image" class="Second slide">
+                </div>
+
+                <div class="card-mainimage carousel-item ">
+                    <img src="{{ section.settings.eCard3-img3-main | img_url: 'large' }}" alt="Product Image" class="Third slide">
+                </div>
+
+                <div class="card-mainimage carousel-item ">
+                    <img src="{{ section.settings.eCard3-img4-main | img_url: 'large' }}" alt="Product Image" class="Fourth slide">
+                </div>
+
+                <div class="card-mainimage carousel-item ">
+                    <img src="{{ section.settings.eCard3-img5-main | img_url: 'large' }}" alt="Product Image" class="Fifth slide">
+                </div>
+
+                    </div>
+
+
+
+
+
+
+                <div class="card-img-overlay d-flex flex-column ">
+                  <!-- 1 -->
+                    <div class="img1-ecommerce m-2 " data-target="#carouselExampleIndicators" data-slide-to="0" >
+                        <img src="{{ section.settings.eCard3-img1-main | img_url: 'large' }}" alt="Product Image" class="First slide">
+                    </div>
+                    <!-- 2 -->
+                    <div class="img1-ecommerce m-2" data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <img src="{{ section.settings.eCard3-img2-main | img_url: 'large' }}" alt="Product Image" class="Second slide">
+                    </div>
+                    <!-- 3 -->
+                    <div class="img1-ecommerce m-2" data-target="#carouselExampleIndicators" data-slide-to="2">
+                        <img src="{{ section.settings.eCard3-img3-main | img_url: 'large' }}" alt="Product Image" class="third slide">
+                    </div>
+                    <!-- 4 -->
+                    <div class="img1-ecommerce m-2" data-target="#carouselExampleIndicators" data-slide-to="3">
+                        <img src="{{ section.settings.eCard3-img4-main | img_url: 'large' }}" alt="Product Image" class="image-sub1">
+                    </div>
+                    <!-- 5 -->
+                    <div class="img1-ecommerce m-2" data-target="#carouselExampleIndicators" data-slide-to="4">
+                        <img src="{{ section.settings.eCard3-img5-main | img_url: 'large' }}" alt="Product Image" class="image-sub1">
+                    </div>
+                </div>
+                </div>
+
+                <div class="card-body d-flex flex-column col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
+                  <div class="card-title font-weight-bold d-flex text-xs-center text-sm-center">
+                 <h4 class="font-weight-bold"> {{ section.settings.ecommerce3-title1}}</h4>   
+                  </div>
+                  <div class="d-flex flex-row">
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="card-subtitle">
+                      <h2 class="font-weight-bold"> {{ section.settings.ecommerce2-Price1}}</h2>   
+                  </div>
+                  <div class="card-text card-text1">
+                    <p>{{ section.settings.ecommerce2-desc1}}</p>
+                  </div>
+                  <div class="card-button d-flex flex-row">
+                      <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <small class="text-muted">{{ section.settings.buttonlabel1}}</small> <small class="text-muted">|</small> {{ section.settings.buttonlabel2}} <small class="text-muted">|</small>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">{{ section.settings.buttonitem1}}</a>
+                            <a class="dropdown-item" href="#">{{ section.settings.buttonitem2}}</a>
+                            <a class="dropdown-item" href="#">{{ section.settings.buttonitem3}}</a>
+                          </div>
+                        </div>
+
+
+                  </div>
+
+
+                </div>
+            </div>
+          </div>
+
+
+
+
+</div>
+</div>
+
+         
+
+
+{% schema %}
+{
+  "name": "ecommerce 3",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "ecommerce3-title1",
+    "type": "text",
+    "label": "Ecomerce 2 Title",
+    "default": "Our Products"
+  },
+  {
+    "type": "image_picker",
+    "id": "eCard3-img1-main",
+    "label": "eCard Image 1"
+  },
+  {
+    "type": "image_picker",
+    "id": "eCard3-img2-main",
+    "label": "eCard Image 1"
+  },
+  {
+    "type": "image_picker",
+    "id": "eCard3-img3-main",
+    "label": "eCard Image 1"
+  },
+  {
+    "type": "image_picker",
+    "id": "eCard3-img4-main",
+    "label": "eCard Image 1"
+  },
+  {
+    "type": "image_picker",
+    "id": "eCard3-img5-main",
+    "label": "eCard Image 1"
+  },
+  {
+    "id": "ecommerce2-Price1",
+    "type": "text",
+    "label": "Price",
+    "default": "Php. 1,000.00"
+  },
+  {
+    "id": "ecommerce2-desc1",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nemo voluptatem odio molestiae, architecto ipsa odit necessitatibus soluta deserunt, eligendi aut ullam nam in ratione minima itaque? Vero, esse. Unde."
+  },
+  {
+    "id": "buttonlabel1",
+    "type": "text",
+    "label": "Button Description 1",
+    "default": "Size"
+  },
+  {
+    "id": "buttonlabel2",
+    "type": "text",
+    "label": "Button Label 2",
+    "default": "Button"
+  },
+  {
+    "id": "buttonitem1",
+    "type": "text",
+    "label": "Button Item",
+    "default": "Size"
+  },
+  {
+    "id": "buttonitem2",
+    "type": "text",
+    "label": "Button Item",
+    "default": "Color"
+  },
+  {
+    "id": "buttonitem3",
+    "type": "text",
+    "label": "Button Item",
+    "default": "More..."
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ecommerce 3",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

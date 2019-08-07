@@ -1,0 +1,83 @@
+<div class="container-fluid bg-container">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="card col-lg-4 col-md-4 border-0 m-5 p-5">
+                    <div class="card-title">
+                        <h2 class="font-weight-bold"> How it works</h2>
+                    </div>
+
+                    <div class="card-text">
+                        <p><small class="text-muted">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eum velit iusto totam quidem, minus cumque nam magni quasi laboriosam?
+                        </small></p>
+                    </div>
+                    <div class="card-button d-flex flex-row">
+                                        
+                            <button class="page-button button-bg2 rounded mr-4">BUTTON</button> <small style="line-height: 22px;">Watch More <i class="far fa-play-circle"></i></small>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 p-5">
+                        <img src="{{'Composition.png' | asset_url}}" alt="" style="position: relative;">
+
+  
+
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+
+
+{% schema %}
+{
+  "name": "How it works 8",
+    "max_blocks": 3,
+  "settings": [
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Blog",
+    "default": "Title"
+  },
+  {
+    "id": "blog-title",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+  },
+  {
+    "id": "description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works 8",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

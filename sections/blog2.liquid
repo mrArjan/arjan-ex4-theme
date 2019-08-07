@@ -1,0 +1,113 @@
+<div class="container-fluid bg-container mt-5">
+
+        <div class="container p-5 bg2-container">
+          <div class="row" >
+                <div class="col-lg-12">
+                        <h1 class="text-center ">{{ section.settings.text-box-title }}</h1>
+                    </div>
+          </div>
+       <div class="row card-deck d-flex justify-content-center">
+                {% for block in section.blocks %}  
+                <div class="card col-lg-3 " >
+                        <img class="card-img-top img-top img-fluid p-0"  src="{{ block.settings.teamPhoto | img_url: 'large' }}" alt="Card image cap">
+                        <div class="card-body">
+                        <p class="card-text"><small class="text-muted">{{ block.settings.date-made }} | By {{ block.settings.Author }}</small></p>
+                          <h5 class="card-title">{{ block.settings.blog-title }}</h5>
+                          <p class="card-text"> <small class="text-muted">{{ block.settings.description-text }}</p>
+                          </small>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    
+                    </div>
+                    <div class=" text-center mt-5">
+                      <button class="page-button button-bg1 ">{{ section.settings.linktext }}</button>
+                    </div>
+                  </div>
+       
+   
+        </div>
+
+        
+        
+
+
+{% schema %}
+{
+  "name": "Blog 2",
+	"max_blocks": 4,
+  "settings": [
+    {
+      "id": "text-box-title",
+      "type": "text",
+      "label": "Blog",
+      "default": "Title"
+    },
+    {
+        "id": "link",
+        "type": "url",
+        "label": "Button link"
+      },
+    {
+        "id": "linktext",
+        "type": "text",
+        "label": "Button text",
+        "default": "Click here"
+      }
+
+      
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+      {
+        "type": "image_picker",
+        "id": "teamPhoto",
+        "label": "Team Photo image"
+      },
+      {
+        "id": "date-made",
+        "type": "text",
+        "label": "Date Made",
+        "default": "21 Dec 2018"
+      },
+      {
+        "id": "Author",
+        "type": "text",
+        "label": "Author",
+        "default": "Emma Munoz"
+      },
+      {
+        "id": "blog-title",
+        "type": "text",
+        "label": "Title of Blog",
+        "default": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+      }
+      ,
+      {
+        "id": "description-text",
+        "type": "text",
+        "label": "Description",
+        "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+      }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 2",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

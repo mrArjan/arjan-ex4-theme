@@ -1,0 +1,116 @@
+<div class="container-fluid bg-container">
+    <div class="container">
+        <div class="text-center font-weight-bold">
+            <h1>Why people love form</h1>
+        </div>
+        <div class="row c-flex justify-content-center">
+            <div class="col-lg-4 col-md-8">
+                <img src="{{'Avatar2.png' | asset_url}}" alt="" width="240px;" class="img-fluid">
+            </div>
+
+
+
+
+          <div class="col-lg-6 col-md-8 p-0">
+            <div class="carousel slide pt-5 mt-5" data-ride="carousel" id="quote-carousel">
+              <div class="carousel-inner">
+              
+                <!-- Quote 1 -->
+                <div class="item active">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-9">
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- Quote 2 -->
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- Quote 3 -->
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              
+              <!-- Carousel Buttons Next/Prev -->
+              <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+              <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+            </div>                          
+          </div>
+        </div>
+  
+
+        </div>
+        </div>
+
+
+
+{% schema %}
+{
+  "name": "Testimonials 2",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Blog",
+    "default": "Title"
+  },
+  {
+    "id": "blog-title",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+  },
+  {
+    "id": "description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials 2",
+      "category": "Testimonials",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

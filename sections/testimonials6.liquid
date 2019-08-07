@@ -1,0 +1,132 @@
+<div class="container-liquid bg-container">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="text-center font-weight-bold">{{ section.settings.howitworks6-title}}</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center flex-row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 d-flex justify-content-center test6">
+                <img src="{{ section.settings.testim6-img1 | img_url: 'large' }}" alt="Product Image" class="image">
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 d-flex justify-content-center test6">
+                <img src="{{ section.settings.testim6-img2 | img_url: 'large' }}" alt="Product Image" class="image">
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 d-flex justify-content-center test6">
+                <img src="{{ section.settings.testim6-img3 | img_url: 'large' }}" alt="Product Image" class="image">
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 d-flex justify-content-center test6">
+                <img src="{{ section.settings.testim6-img4 | img_url: 'large' }}" alt="Product Image" class="image">
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 d-flex justify-content-center test6">
+                <img src="{{ section.settings.testim6-img5 | img_url: 'large' }}" alt="Product Image" class="image">
+        </div>
+
+
+    </div>
+
+    <div class="row d-flex justify-content-center mt-5">
+        <div class=" card text-center col-lg-5  col-md-5  col-sm-12  col-sm-12 border-0" >
+            <div class="card-body">
+                <p>{{ section.settings.testimonial6-text}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center flex-column">
+    <div class="text-center">
+        <h5 class="font-weight-bold mt-5">{{ section.settings.testimonial6-Author1}} </h5>
+    </div>
+    <div class="text-center">
+            <p class="font-weight-light mb-5 text-muted">{{ section.settings.testimonial6-subtitle1}} </p>
+    </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Testimonials 6",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "howitworks6-title",
+    "type": "text",
+    "label": "Main Title",
+    "default": "Why Do People Love Form?"
+  },
+  {
+    "type": "image_picker",
+    "id": "testim6-img1",
+    "label": "Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "testim6-img2",
+    "label": "Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "testim6-img3",
+    "label": "Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "testim6-img4",
+    "label": "Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "testim6-img5",
+    "label": "Image"
+  },
+  {
+    "id": "testimonial6-text",
+    "type": "text",
+    "label": "DEscription ",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+  {
+    "id": "testimonial6-Author1",
+    "type": "text",
+    "label": "Author",
+    "default": "Alvin Simon"
+  },
+  {
+    "id": "testimonial6-subtitle1",
+    "type": "text",
+    "label": "Author",
+    "default": "Alvin Simon"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials 6",
+      "category": "Testimonials",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

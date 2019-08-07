@@ -1,0 +1,135 @@
+<div class="container-fluid bg-container">
+        <div class="container">
+                 <div class="text-center pt-4 pb-4">
+                     <h2 class="text-center text-uppercase">{{ section.settings.howitworks2-title1}}</h2>
+                 </div>
+
+                 <div class="row d-flex justify-content-around ">
+
+                    <div class="d-flex flex-column align-items-center">
+                    <div class="circle1 circ12">1</div>
+                            <h5 class="text-left">
+                               {{ section.settings.howitworks2-steps1}}
+                            </h5>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="circle1 circ12">2</div>
+                    <h5 class="text-left">
+                           {{ section.settings.howitworks2-steps2}}
+                        </h5>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="circle1 ">3</div>
+                    <h5 class="text-left">
+                           {{ section.settings.howitworks2-steps3}}
+                        </h5>
+                
+                </div>
+                 </div>
+
+
+                 <div class="row p-5 d-flex justify-content-center">
+                     <div class="col-lg-3 card col-md-4 border-0">
+                         <div class="card-title">
+                             <h5 class="font-weight-bold text-left">
+                                {{ section.settings.howitworks2-cardtitle}}
+                             </h5>
+                         </div>
+                         <div class="card-text">
+                             <p>{{ section.settings.howitworks2-cardtext}}</p>
+                         </div>
+
+
+                         <div class="card-subtitle pt-4 pb-5">
+                             <small><u>Watch More </u> <i class="far fa-play-circle"></i></small>
+                         </div>
+                     </div>
+
+
+                     <div class="col-lg-4 col-md-4 card border-0">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                  </div>
+                     </div>
+                     
+                 </div>
+
+
+
+    </div>
+ </div>
+
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur beatae sapiente facere explicabo. Illo aliquam enim nemo maiores hic!
+
+ {% schema %}
+{
+  "name": "How it works 2",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "howitworks2-title1",
+    "type": "text",
+    "label": "Main Title",
+    "default": "How it works"
+  },
+  {
+    "id": "howitworks2-steps1",
+    "type": "text",
+    "label": "Step Title",
+    "default": "Inastallation"
+  },
+  {
+    "id": "howitworks2-steps2",
+    "type": "text",
+    "label": "Step Title",
+    "default": "Setup"
+  },
+  {
+    "id": "howitworks2-steps3",
+    "type": "text",
+    "label": "Step Title",
+    "default": "Design"
+  },
+
+  {
+    "id": "howitworks2-cardtitle",
+    "type": "text",
+    "label": "Card Title",
+    "default": "Our Most powerful engine up to date"
+  },
+  {
+    "id": "howitworks2-cardtext",
+    "type": "text",
+    "label": "Card Description",
+    "default": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur beatae sapiente facere explicabo. Illo aliquam enim nemo maiores hic!"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works 2",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

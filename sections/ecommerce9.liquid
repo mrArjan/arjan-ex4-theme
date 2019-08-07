@@ -1,0 +1,135 @@
+<div class="container-fluid bg-container">
+  <div class="container">
+  <div class="row pt-5  ">
+    <div class="col-lg-6">
+      <h3 class="font-weight-bold">{{ section.settings.ecommerce9-Maintitle}} </h3>
+    </div>
+
+    <div class="col-lg-6 float-right text-right">
+        <div id="myDIV float-right text-right">
+            <button class="btn1 p-3 w-10" style="background-color:transparent;" ><small> Featured    </small></button>
+            <button class="btn1 p-3 w-10" style="background-color:transparent;"><small> New Arrival </small></button>
+            <button class="btn1 p-3 w-10" style="background-color:transparent;"><small> Best Seller </small></button>
+         
+          </div>
+    </div>
+  </div>
+
+  <div class="row pt-5 pb-5 ">
+  <div class="card col-lg-4 col-md-4 border-0">
+      <div class="card-body ecommerce9" style="position: relative;">
+          <img src="{{ section.settings.ecard9-img1-main | img_url: 'large' }}" alt="" style="position: relative;">
+          <div class="carousel-caption"  style="position: absolute; ">
+            <h5 class="font-weight-bold" >Php. {{ section.settings.ecommerce9-price1}}</h5 >  </div>
+      </div>
+  </div>
+
+
+      <div class="card col-lg-4 col-md-4 border-0">
+          <div class="card-body ecommerce9" style="position: relative;">
+              <img src="{{ section.settings.ecard9-img2-main | img_url: 'large' }}" alt="" style="position: relative;">
+              <div class="carousel-caption"  style="position: absolute; ">
+                <h5 class="font-weight-bold" >Php.{{ section.settings.ecommerce9-price2}}</h5 >  </div>
+          </div>
+      </div>
+
+      <div class="card col-lg-4 col-md-4 border-0">
+          <div class="card-body ecommerce9" style="position: relative;">
+              <img src="{{ section.settings.ecard9-img3-main | img_url: 'large' }}" alt="" style="position: relative;">
+              <div class="carousel-caption"  style="position: absolute; ">
+                <h5 class="font-weight-bold" >Php. {{ section.settings.ecommerce9-price3}}</h5 >  </div>
+          </div>
+      </div>
+    </div>
+
+    <div class=" text-center m-5">
+        <button class="page-button button-bg1 ">{{ section.settings.linktext }}</button>
+      </div>
+  
+  </div>
+    </div>
+
+
+
+
+{% schema %}
+{
+  "name": "ecommerce 9",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "ecommerce9-Maintitle",
+    "type": "text",
+    "label": "Main Title",
+    "default": "More items you might like"
+  },
+  {
+    "type": "image_picker",
+    "id": "ecard9-img1-main",
+    "label": "eCard Image "
+  },
+  {
+    "id": "ecommerce9-price1",
+    "type": "text",
+    "label": "Product Price",
+    "default": "200.00"
+  },
+  {
+    "type": "image_picker",
+    "id": "ecard9-img2-main",
+    "label": "eCard Image "
+  },
+  {
+    "id": "ecommerce9-price2",
+    "type": "text",
+    "label": "Product Price",
+    "default": "200.00"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "ecard9-img3-main",
+    "label": "eCard Image "
+  },
+  {
+    "id": "ecommerce9-price3",
+    "type": "text",
+    "label": "Product Price",
+    "default": "200.00"
+  },
+
+
+  {
+    "id": "linktext",
+    "type": "text",
+    "label": "Button Label",
+    "default": "Button"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "eccommerce 9",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

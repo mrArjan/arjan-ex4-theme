@@ -1,0 +1,156 @@
+/* carousel */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  background-color: white;
+}
+
+blockquote {
+  background-color: white;
+  border-bottom: none;
+}
+
+.page-dots-c2 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  z-index: 15;
+  width: 15%;
+  margin-left: -9%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.page-dots-c2 .dotss {
+  background-color: #222;
+}
+
+.img-test5 {
+  width: 130px;
+}
+
+.img-test5 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.test-5-left span, .test-5-right span {
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  position: absolute;
+  margin-top: 30px;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+  left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+  right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background: transparent;
+}
+
+/* End carousel */
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.car-2 {
+  background-color: white;
+}
+
+.item, .active {
+  border-bottom: white;
+}
+
+.page-dots-c li {
+  background-color: black;
+}
+
+.icon-3 {
+  color: black;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+.img-test4 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.img-test34 {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+}
+
+/**
+  MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #quote-carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+  }
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+  #quote-carousel .carousel-indicators {
+    bottom: -20px !important;
+  }
+  #quote-carousel .carousel-indicators li {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 15px;
+    height: 15px;
+  }
+  #quote-carousel .carousel-indicators li.active {
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+/*# sourceMappingURL=carousel-testimonials.css.map */

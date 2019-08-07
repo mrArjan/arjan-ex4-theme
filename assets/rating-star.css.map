@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAA,MAAM,CAAA;EACZ,KAAK,EAAE,MAAM;CACd",
+    "sources": [
+        "rating-star.scss"
+    ],
+    "names": [],
+    "file": "rating-star.css"
+}

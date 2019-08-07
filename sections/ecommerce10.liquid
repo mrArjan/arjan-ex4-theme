@@ -1,0 +1,129 @@
+<div class="container-fluid bg-container">
+        <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="card border-0 col-lg-6 col-md-6 col-sm-6 p-3 ecommerce10" style="position: relative;">
+                       <img src="{{ section.settings.ecard10-img1-main | img_url: 'large' }}" alt="">
+                        <div class="card-title carousel-caption"n style="top:20%;">
+                            <h3 class="font-weight-bold text-uppercase pb-3">
+                                {{ section.settings.ecommerce10-title1}}
+                            </h3>
+                        </div>
+
+                        <div class="card-subtitle carousel-caption text-center " style="top: 30%">
+                            <h4 class="pt-2 "> {{ section.settings.ecommerce10-subtitle1}}</h4>
+                        </div>
+
+                        <div class="card-text carousel-caption " style="top: 40%;">
+                                <button class="page-button button-bg1">{{ section.settings.ecommerce10-button1}}</button>
+                            </div>
+                    </div>
+
+                    <div class="card border-0 col-lg-6 col-md-6 col-sm-6 p-3 ecommerce10" style="position: relative;">
+                           <img src="{{ section.settings.ecard10-img2-main | img_url: 'large' }}" alt="">
+                            <div class="card-title carousel-caption"n style="top:20%;">
+                                <h3 class="font-weight-bold text-uppercase pb-3">
+                                    {{ section.settings.ecommerce10-title2 }}
+                                </h3>
+                            </div>
+    
+                            <div class="card-subtitle carousel-caption text-center " style="top: 30%">
+                                <h4 class="pt-2 "> {{ section.settings.ecommerce10-subtitle2 }}</h4>
+                            </div>
+    
+                            <div class="card-text carousel-caption " style="top: 40%;">
+                                    <button class="page-button button-bg1">{{ section.settings.ecommerce10-button2 }}</button>
+                                </div>
+                        </div>
+
+
+                </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+{% schema %}
+{
+  "name": "ecommerce 10",
+	"max_blocks": 3,
+  "settings": [
+
+  {
+    "type": "image_picker",
+    "id": "ecard10-img1-main",
+    "label": "eCard Image "
+  },
+  {
+    "id": "ecommerce10-title1",
+    "type": "text",
+    "label": "Title",
+    "default": "collection"
+  },
+  {
+    "id": "ecommerce10-subtitle1",
+    "type": "text",
+    "label": "Card Subtitle",
+    "default": "Summer 2019"
+  },
+  {
+    "id": "ecommerce10-button1",
+    "type": "text",
+    "label": "Card Button",
+    "default": "Button"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "ecard10-img2-main",
+    "label": "eCard Image "
+  },
+  {
+    "id": "ecommerce10-title2",
+    "type": "text",
+    "label": "Title",
+    "default": "collection"
+  },
+  {
+    "id": "ecommerce10-subtitle2",
+    "type": "text",
+    "label": "Card Subtitle",
+    "default": "Summer 2019"
+  },
+  {
+    "id": "ecommerce10-button2",
+    "type": "text",
+    "label": "Card Button",
+    "default": "Button"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ecommerce 10",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

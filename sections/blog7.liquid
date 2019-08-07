@@ -1,0 +1,174 @@
+<div class="container-fluid bg-container mt-5">
+    <div class="container p-lg-5 p-2">
+        <div class="text-center">
+            <h2 class="text-center font-weight-bold"> {{ section.settings.title-text-blog6}}</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
+            <div class="card">
+                <div class="card-body ">
+                   <h6 class="text-muted"><p><small>{{ section.settings.blog-date1}} | By {{ section.settings.blog-Author1}} </small></p></h6>
+                   <div class="card-title">
+                   <h5 class="font-weight-bold">{{ section.settings.blog-title1}}</h5>
+                  </div>
+                  <div class="card-text">
+                   <p>{{ section.settings.blog-description1}}</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
+            <div class="card">
+                <div class="card-body ">
+                    <h6 class="text-muted"><p><small>{{ section.settings.blog-date2}} | By {{ section.settings.blog-Author2}}</small></p></h6>
+                    <div class="card-title">
+                    <h5 class="font-weight-bold">{{ section.settings.blog-title2}}</h5>
+                  </div>
+                  <div class="card-title">
+                    <p>{{ section.settings.blog-description2}}</p>
+                  </div>
+             </div>
+             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
+             <div class="card">
+                 <div class="card-body ">
+                    <h6 class="text-muted"><p><small>{{ section.settings.blog-date3}} | By  {{ section.settings.blog-Author3}}</small></p></h6>
+                    <div class="card-title">
+                    <h5 class="font-weight-bold">{{ section.settings.blog-title3}}</h5>
+                  </div>
+                  <div class="card-text">
+                    <p>{{ section.settings.blog-description3}}</p>
+                  </div>
+               </div>
+              </div>
+             </div>
+
+            </div>
+
+            <div class="text-center m-lg-4 mt-2">
+                <button class="page-button button-bg1">BUTTON</button>
+            </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog 7",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "title-text-blog6",
+    "type": "text",
+    "label": "Blog Title",
+    "default": "Title"
+  },
+  {
+    "id": "blog-date1",
+    "type": "text",
+    "label": "Date of Published (Card 1)",
+    "default": "Oct 25 2017"
+  },
+  {
+    "id": "blog-Author1",
+    "type": "text",
+    "label": "Author",
+    "default": "Swayze Aguilar"
+  },
+  {
+    "id": "blog-title1",
+    "type": "text",
+    "label": "Blog Title",
+    "default": "Lorem ipsum dolor sit amet consectetur."
+  },
+  {
+    "id": "blog-description1",
+    "type": "text",
+    "label": "Blog Title (1st)",
+    "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quam, et aspernatur necessitatibus architecto repellendus!"
+  }
+
+  ,
+  {
+    "id": "blog-date2",
+    "type": "text",
+    "label": "Date of Published (Card 2)",
+    "default": "Oct 25 2017"
+  },
+  {
+    "id": "blog-Author2",
+    "type": "text",
+    "label": "Author",
+    "default": "Swayze Aguilar"
+  },
+  {
+    "id": "blog-title2",
+    "type": "text",
+    "label": "Blog Title",
+    "default": "Lorem ipsum dolor sit amet consectetur."
+  },
+  {
+    "id": "blog-description2",
+    "type": "text",
+    "label": "Blog Title (2nd)",
+    "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quam, et aspernatur necessitatibus architecto repellendus!"
+  }
+
+  ,
+  {
+    "id": "blog-date3",
+    "type": "text",
+    "label": "Date of Published (Card 3)",
+    "default": "Oct 25 2017"
+  },
+  {
+    "id": "blog-Author3",
+    "type": "text",
+    "label": "Author",
+    "default": "Swayze Aguilar"
+  },
+  {
+    "id": "blog-title3",
+    "type": "text",
+    "label": "Blog Title",
+    "default": "Lorem ipsum dolor sit amet consectetur."
+  },
+  {
+    "id": "blog-description3",
+    "type": "text",
+    "label": "Blog Title (3rd)",
+    "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quam, et aspernatur necessitatibus architecto repellendus!"
+  }
+
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 7",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

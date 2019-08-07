@@ -1,0 +1,194 @@
+<div class="container-fluid bg-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex align-items-end">
+            <h3 class="text-left font-weight-bold d-flex align-items-end">
+                {{ section.settings.blog9-title }}
+            </h3>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right d-flex justify-content-end align-items-center">
+            <subtitle ><u class="text-muted ">see all</u></subtitle>
+        </div>
+        </div>
+
+
+
+        <div class="row d-flex justify-content-center pb-5">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+            <div class="card">
+                <img src="{{ section.settings.card-img1 | img_url: 'large' }}" alt="">
+              <div class="card-img-overlay d-flex align-items-end">
+                <div class="card-body">
+                  <div class="card-title cardtitle-blog9">
+                      <h3 class="font-weight-bold text-white">
+                          {{ section.settings.blog9-title1 }}
+                      </h3>
+                  </div>
+
+                  <div class="card-buttons d-flex flex-row align-items-end">
+                    <div class="card-choices d-flex flex-row">
+                      <div class="pr-5">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="pl-1">
+                      <i class="far fa-comment"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd -->
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+            <div class="card">
+                <img src="{{ section.settings.card-img1 | img_url: 'large' }}" alt="">
+              <div class="card-img-overlay d-flex align-items-end">
+                <div class="card-body">
+                  <div class="card-title cardtitle-blog9">
+                      <h3 class="font-weight-bold text-white">
+                          {{ section.settings.blog9-title1 }}
+                      </h3>
+                  </div>
+
+                  <div class="card-buttons d-flex flex-row align-items-end">
+                    <div class="card-choices d-flex flex-row">
+                      <div class="pr-5">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="pl-1">
+                      <i class="far fa-comment"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd -->
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+            <div class="card">
+                <img src="{{ section.settings.card-img1 | img_url: 'large' }}" alt="">
+              <div class="card-img-overlay d-flex align-items-end">
+                <div class="card-body">
+                  <div class="card-title cardtitle-blog9">
+                      <h3 class="font-weight-bold text-white">
+                          {{ section.settings.blog9-title1 }}
+                      </h3>
+                  </div>
+
+                  <div class="card-buttons d-flex flex-row align-items-end">
+                    <div class="card-choices d-flex flex-row">
+                      <div class="pr-5">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="pl-1">
+                      <i class="far fa-comment"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th -->
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+            <div class="card">
+                <img src="{{ section.settings.card-img1 | img_url: 'large' }}" alt="">
+              <div class="card-img-overlay d-flex align-items-end">
+                <div class="card-body">
+                  <div class="card-title cardtitle-blog9">
+                      <h3 class="font-weight-bold text-white">
+                          {{ section.settings.blog9-title1 }}
+                      </h3>
+                  </div>
+
+                  <div class="card-buttons d-flex flex-row align-items-end">
+                    <div class="card-choices d-flex flex-row">
+                      <div class="pr-5">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="pl-1">
+                      <i class="far fa-comment"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Blog 9",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "blog9-title",
+    "type": "text",
+    "label": "Blog Title",
+    "default": "Fresh Content"
+  },
+  {
+    "type": "image_picker",
+    "id": "card-img1",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "blog9-label1",
+    "type": "text",
+    "label": "Blog 1 Label",
+    "default": "Label"
+  },
+  {
+    "id": "blog9-title1",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "How to spot the big dipper."
+  },
+  {
+    "id": "description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 9",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,119 @@
+<div class="container-fluid bg-container">
+        <div class="container ">
+            <div class="row mt-5">
+                <div class="col-lg-6 p-5">
+                    <div class="card border-0 mt-10">
+                        <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-muted font-weight-bold">Lorem, ipsum dolor.</h3>
+                        </div>
+                        <div class="card-subtitle">
+                               <div class="row"> <i class="far fa-user mr-2"></i> <p> 12,220</p>  </div>
+                        </div>
+                        <div class="card-text" style="box-sizing: border-box; padding:10px;">
+                            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, quidem! Magni, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis mollitia fugit alias quis pariatur sunt earum, nemo iure ullam!</p>
+                        </div>
+                        
+                        <div class="card border-right-0 border-left-0 border-bottom-0" style="width: 30rem;">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><small class="text-muted"> size:</small>   <p class="float-right">56</p>  </li>
+                                  <li class="list-group-item"><small class="text-muted"> size:</small>   <p class="float-right">56</p>  </li>
+                                  <li class="list-group-item"><small class="text-muted"> size:</small>   <p class="float-right">56</p>  </li>
+                                </ul>
+                              </div>
+
+                              <div class="row  mt-lg-4 mt-2">                                      
+                                    <button class="page-button button-bg1">BUTTON</button>
+                                
+                                  <i class="fas fa-heart hearts mr-4 mt-2"></i>
+
+                                  <h5 class="text-muted">Add to wishlist</h5>
+                                </div>
+                             
+
+
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                        <div class="row" style="padding: 20px 30px;
+                        height: 400px;">
+                                <img src="{{'media-pic7-thedrop.png' | asset_url}}" alt="">
+                        </div>
+
+                        <div class="row" style="    padding: 10px;">
+                            <div class="col-lg-3">
+                                <img src="{{'media-pic7-thedrop.png' | asset_url}}" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                    <img src="{{'media-pic7-thedrop.png' | asset_url}}" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                        <img src="{{'media-pic7-thedrop.png' | asset_url}}" alt="" >
+                                    </div>
+                                    <div class="col-lg-3">
+                                            <img src="{{'media-pic7-thedrop.png' | asset_url}}" alt="">
+                                        </div>
+                        </div>
+                     
+                </div>
+
+
+            </div>
+
+</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "ecommerce 7",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Blog",
+    "default": "Title"
+  },
+  {
+    "id": "blog-title",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+  },
+  {
+    "id": "description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "eccommerce 7",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,211 @@
+
+<div class="container-fluid bg-container">
+
+<div class="container p-5">
+  <div class="row">
+  <div class="col-lg-12 mb-5">
+      <h1 class="text-center ">{{ section.settings.text-box-title }} </h1>
+  </div>
+
+  <div class="d-flex justify-content-center row">
+
+  <div class="card col-lg-3 col-md-3 m-2 ">
+    <div class="card-img-top p-2 d-flex justify-content-center">
+      <img src="{{ section.settings.MainImage1 | img_url: 'large' }}" alt="">
+    </div>
+
+    <div class="card-body">
+    <div class="card-subtitle">
+     <small class="text-muted"> <class="text-muted">{{ section.settings.text-box-date1 }}</small>
+    </div>
+      <div class="card-title bg-warning1 ">
+            <h4 class="text-justify">{{ section.settings.text-box-Description1}}</h4>
+           </div>
+    <div class="card-button">
+    <button class="button-bg1 mt-2">{{ section.settings.linktext1}}</button>
+  </div>
+  </div>  
+  </div>
+
+
+
+  <div class="card col-lg-3 col-md-3 m-2 ">
+      <div class="card-img-top p-2 d-flex justify-content-center">
+        <img src="{{ section.settings.MainImage2 | img_url: 'large' }}" alt="">
+      </div>
+  
+      <div class="card-body">
+      <div class="card-subtitle">
+       <small class="text-muted"> <class="text-muted">{{ section.settings.text-box-date2 }}</small>
+      </div>
+        <div class="card-title bg-warning1 ">
+              <h4 class="text-justify">{{ section.settings.text-box-Description2}}</h4>
+             </div>
+      <div class="card-button">
+      <button class="button-bg1 mt-2">{{ section.settings.linktext2}}</button>
+    </div>
+    </div>  
+    </div>
+
+    <div class="card col-lg-3 col-md-3 m-2 ">
+        <div class="card-img-top p-2 d-flex justify-content-center">
+          <img src="{{ section.settings.MainImage3 | img_url: 'large' }}" alt="">
+        </div>
+    
+        <div class="card-body">
+        <div class="card-subtitle">
+         <small class="text-muted"> <class="text-muted">{{ section.settings.text-box-date3 }}</small>
+        </div>
+          <div class="card-title bg-warning1 ">
+                <h4 class="text-justify">{{ section.settings.text-box-Description3}}</h4>
+               </div>
+        <div class="card-button">
+        <button class="button-bg1 mt-2">{{ section.settings.linktext3}}</button>
+      </div>
+      </div>  
+      </div>
+  </div>  
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Blog 1",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Section",
+    "default": "Title"
+  },
+  {
+    "type": "image_picker",
+    "id": "MainImage1",
+    "label": "Team Photo image"
+  },
+  {
+    "id": "text-box-date1",
+    "type": "text",
+    "label": "Date Published",
+    "default": "Date Published"
+  },
+  {
+    "id": "text-box-Description1",
+    "type": "text",
+    "label": "Title",
+    "default": "Image Title"
+  },
+  {
+    "id": "link1",
+    "type": "url",
+    "label": "Button link"
+  },
+  {
+    "id": "linktext1",
+    "type": "text",
+    "label": "Button text",
+    "default": "Click here"
+  },
+  
+  
+
+  {
+    "type": "image_picker",
+    "id": "MainImage2",
+    "label": "Team Photo image"
+  },
+  {
+    "id": "text-box-date2",
+    "type": "text",
+    "label": "Date Published",
+    "default": "Date Published"
+  },
+  {
+    "id": "text-box-Description2",
+    "type": "text",
+    "label": "Title",
+    "default": "Image Title"
+  },
+  {
+    "id": "link2",
+    "type": "url",
+    "label": "Button link"
+  },
+  {
+    "id": "linktext2",
+    "type": "text",
+    "label": "Button text",
+    "default": "Click here"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "MainImage3",
+    "label": "Team Photo image"
+  },
+  {
+    "id": "text-box-date3",
+    "type": "text",
+    "label": "Date Published",
+    "default": "Date Published"
+  },
+  {
+    "id": "text-box-Description3",
+    "type": "text",
+    "label": "Title",
+    "default": "Image Title"
+  },
+  {
+    "id": "link3",
+    "type": "url",
+    "label": "Button link"
+  },
+  {
+    "id": "linktext3",
+    "type": "text",
+    "label": "Button text",
+    "default": "Click here"
+  }
+
+
+
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "New Image",
+      "settings": [
+      
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 1",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% javascript %}
+{% endjavascript %}
+

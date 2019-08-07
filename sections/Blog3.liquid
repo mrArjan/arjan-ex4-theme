@@ -1,0 +1,279 @@
+<div class="container-fluid bg-container blog-1">
+   
+<div class="container">
+  <!-- title -->
+        <div class="text-center">
+            <h1 class="text-center">{{ section.settings.text-box-title }}</h1>
+        </div>
+
+        <div class="row d-flex justify-content-lg-center justify-content-md-center justify-content-sm-center  p-lg-4 p-md-1 flex-lg-wrap flex-md-wrap flex-sm-wrap  div-flexwrapper  ">
+<!-- 1 -->
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12  m-0 p-0 card-wrapper">
+           <div class="card ">
+              <div class="d-flex flex-wrap" style="width:100%;">   
+            <div class="card-img-top">
+                <img class="card-img-top img-fluid" src="{{ section.settings.card-img1 | img_url: 'large' }}" alt="Card image cap">
+               </div>
+              </div>
+               <div class="card-body">
+               <div class="card-title">
+                   <h4 class="font-weight-bold">{{ section.settings.card1-blog-title }}</h4>
+               </div>
+               <div class="card-text text-truncate">
+                   <p class="text-truncate"><small class="text-muted">{{ section.settings.card1-description-text }}
+                   </small></p>
+               </div>
+            </div>
+           </div>
+          </div>
+<!-- 2 -->
+           <div class="col-lg-6 col-md-6 tablet-hide1 ">
+            <img class=" img-fluid img-top-bg3" src="{{ section.settings.center-img | img_url: 'large' }}" alt="Card image cap">
+           </div>
+<!-- 3 -->
+<div class="col-lg-3 col-md-3 col-sm-12 col-12 m-0 p-0 card-wrapper">
+           <div class="card ">
+            <div class="card-img-top">
+             <img class="card-img-top img-fluid" src="{{ section.settings.card-3-img | img_url: 'large' }}" alt="Card image cap">
+            </div>
+            <div class="card-body">
+            <div class="card-title">
+                <h4 class="font-weight-bold">{{ section.settings.card3-blog-title }}</h4>
+            </div>
+            <div class="card-text">
+                <p class="text-truncate"><small class="text-muted">{{ section.settings.card3-description-text }}
+                </small></p>
+            </div>
+         </div>
+        </div>
+      </div>
+
+              <!-- ===ROW2=== -->
+
+              
+<div class="col-lg-3 col-md-3 col-sm-12 col-12  p-0 card-wrapper ">
+            <div class="card ">
+                <div class="card-img-top">
+                 <img class="card-img-top img-fluid" src="{{ section.settings.card4-img | img_url: 'large' }}" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                <div class="card-title">
+                    <h4 class="font-weight-bold">{{ section.settings.card4-blog-title }}</h4>
+                </div>
+                <div class="card-text">
+                    <p class="text-truncate"><small class="text-muted">{{ section.settings.card4-description-text }}
+                    </small></p>
+                </div>
+             </div>
+            </div>
+            </div>
+<!-- 2 -->
+<div class="col-lg-3  col-md-3 col-sm-12 col-12  p-0 card-wrapper ">
+            <div class="card ">
+                <div class="card-img-top">
+                 <img class="card-img-top img-fluid" src="{{ section.settings.card5-img | img_url: 'large' }}" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                <div class="card-title">
+                    <h4 class="font-weight-bold">{{ section.settings.card5-blog-title }}</h4>
+                </div>
+                <div class="card-text">
+                    <p class="text-truncate"><small class="text-muted">{{ section.settings.card5-description-text }}
+                    </small></p>
+                </div>
+             </div>
+            </div>
+            </div>
+<!-- 3 -->
+<div class="col-lg-3   col-md-3 col-sm-12 col-12  p-0 card-wrapper ">
+            <div class="card ">
+              
+                <div class="card-img-top">
+                 <img class="card-img-top img-fluid" src="{{ section.settings.card6-img | img_url: 'large' }}" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                <div class="card-title">
+                    <h4 class="font-weight-bold">{{ section.settings.card6-blog-title }}</h4>
+                </div>
+                <div class="card-text">
+                    <p class="text-truncate"><small class="text-muted">{{ section.settings.card6-description-text }}
+                    </small></p>
+                </div>
+             </div>
+            </div>
+            </div>
+<!-- 4 -->
+<div class=" col-lg-3  col-md-3 col-sm-12 col-12 p-0 card-wrapper">
+            <div class="card">
+                <div class="card-img-top">
+                 <img class="card-img-top img-fluid" src="{{ section.settings.card7-img | img_url: 'large' }}" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                <div class="card-title">
+                    <h4 class="font-weight-bold">{{ section.settings.card7-blog-title }}</h4>
+                </div>
+                <div class="card-text">
+                    <p class="text-truncate"><small class="text-muted">{{ section.settings.card7-description-text }}
+                    </small></p>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+       
+          
+       
+      </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Blog 3",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Blog Title",
+    "default": "Title"
+  },
+  {
+    "type": "image_picker",
+    "id": "card-img1",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "card1-blog-title",
+    "type": "text",
+    "label": "Card Title 1",
+    "default": "Lorem ipsum dolor"
+  },
+  {
+    "id": "card1-description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+  {
+    "id":"center-img",
+    "type":"image_picker",
+    "label": "Card Center Image "
+  },
+  {
+    "type": "image_picker",
+    "id": "card-3-img",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "card3-blog-title",
+    "type": "text",
+    "label": "Card Title 2",
+    "default": "Lorem ipsum dolor"
+  },
+  {
+    "id": "card3-description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  },
+  {
+    "type": "image_picker",
+    "id": "card4-img",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "card4-blog-title",
+    "type": "text",
+    "label": "Card Title 2",
+    "default": "Lorem ipsum dolor"
+  },
+  {
+    "id": "card4-description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ,
+  {
+    "type": "image_picker",
+    "id": "card5-img",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "card5-blog-title",
+    "type": "text",
+    "label": "Card Title 2",
+    "default": "Lorem ipsum dolor"
+  },
+  {
+    "id": "card5-description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ,
+  {
+    "type": "image_picker",
+    "id": "card6-img",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "card6-blog-title",
+    "type": "text",
+    "label": "Card Title 2",
+    "default": "Lorem ipsum dolor"
+  },
+  {
+    "id": "card6-description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ,
+  {
+    "type": "image_picker",
+    "id": "card7-img",
+    "label": "Card Image 1"
+  },
+  {
+    "id": "card7-blog-title",
+    "type": "text",
+    "label": "Card Title 2",
+    "default": "Lorem ipsum dolor"
+  },
+  {
+    "id": "card7-description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+      
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog 3",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

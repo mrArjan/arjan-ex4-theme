@@ -1,0 +1,139 @@
+<div class="container-fluid bg-container">
+    <div class="container">
+                <row class="d-flex justify-content-center justify-content-center pt-5 pb-5 ">
+                        <div class="col-lg-3 col-md-3-col-sm-3">
+                                <div class=" card title-header text-left border-0">
+                                    <div class="card-title pb-4">
+                                        <h2 class="font-weight-bold">
+                                            How it works
+                                        </h2>
+                                    </div>
+
+                                    <div class="card-subtitle">
+                                        <h4 class="text-muted font-weight-bold">It's insanely easy to get starded</h4>
+                                    </div>
+
+                                    <div class="card-text pt-2">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, cupiditate.</p>
+                                    </div>
+
+                                    <div class="d-flex flex-row">
+                                    <div class="card-button pr-4">
+                                        <button class="px-4 rounded"><small>START NOW! </small></button>
+                                    </div>
+
+                                    <div class="card-button">
+                                        
+                                                <small>Watch More <i class="far fa-play-circle"></i></small>
+                                        </div>
+
+                                </div>
+
+
+
+                                </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                        <div class="d-flex flex-column align-items-center pb-5 m-5">
+                                <div class="circle2 circ1">1</div>
+                                        
+                            </div>
+                            <div class="d-flex flex-column align-items-center pb-5 m-5">
+                                    <div class="circle2 circ2">2</div>
+                                          
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center pb-5 m-5">
+                                        <div class="circle2">2</div>
+                                      
+                                            </div>
+                            </div>
+
+                            <!-- <div class="d-flex flex-column col-lg-5">
+
+                            <div class="col-lg-8 d-flex flex-row">
+                                    <div class=" card title-header text-left border-0 mt-3 pb-5 pl-5">
+                                            <div class="card-subtitle">
+                                                <h4 class="text-muted font-weight-bold">Installation</h4>
+                                            </div>
+        
+                                            <div class="card-text pt-2">
+                                                <p><small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit . </small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 d-flex flex-row">
+                                        <div class=" card title-header text-left border-0 mt-3 pb-5 pl-5">
+                                                <div class="card-subtitle">
+                                                    <h4 class="text-muted font-weight-bold">Installation</h4>
+                                                </div>
+            
+                                                <div class="card-text pt-2">
+                                                    <p><small> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit .</small></p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                         -->
+
+
+
+                </row>
+    
+    
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "How it works 4",
+    "max_blocks": 3,
+  "settings": [
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Blog",
+    "default": "Title"
+  },
+  {
+    "id": "blog-title",
+    "type": "text",
+    "label": "Title of Blog",
+    "default": "Lorem ipsum dolor, sit amet consectetur adipisicing."
+  },
+  {
+    "id": "description-text",
+    "type": "text",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet minima ab tenetur omnis quis?"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works 4",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

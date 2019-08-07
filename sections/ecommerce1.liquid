@@ -1,0 +1,212 @@
+<div class="container-fluid bg-container ecommerce1">
+    <div class="container p-lg-4 p-2">
+
+        <div class="text-center">
+            <h2 class="text-center font-weight-bold">
+              {{ section.settings.ecommerce1-title1}}
+            </h2>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <!-- 1 -->
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+                <div class="card ">
+                  <div class="card-img-top">
+                    <img src="{{ section.settings.eCard1-img1 | img_url: 'large' }}" alt="">
+                  </div>
+                  <div class="card-img-overlay d-flex align-items-end text-center">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <h3 class="font-weight-bold text-white">{{ section.settings.eCard1-title1 }}</h3>
+                      </div>
+
+                      <div class="card-text">
+                        <h5 class="text-muted text-white">{{ section.settings.eCard1-price1 }}</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 2 -->
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+                <div class="card ">
+                  <div class="card-img-top">
+                    <img src="{{ section.settings.eCard1-img2 | img_url: 'large' }}" alt="">
+                  </div>
+                  <div class="card-img-overlay d-flex align-items-end text-center">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <h3 class="font-weight-bold text-white">{{ section.settings.eCard1-title2 }}</h3>
+                      </div>
+
+                      <div class="card-text">
+                        <h5 class="text-muted text-white">{{ section.settings.eCard1-price2 }}</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 -->
+
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+                  <div class="card ">
+                    <div class="card-img-top">
+                      <img src="{{ section.settings.eCard1-img3 | img_url: 'large' }}" alt="">
+                    </div>
+                    <div class="card-img-overlay d-flex align-items-end text-center">
+                      <div class="card-body">
+                        <div class="card-title">
+                          <h3 class="font-weight-bold text-white">{{ section.settings.eCard1-title3 }}</h3>
+                        </div>
+  
+                        <div class="card-text">
+                          <h5 class="text-muted text-white">{{ section.settings.eCard1-price3 }}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pt-4">
+                    <div class="card ">
+                      <div class="card-img-top">
+                        <img src="{{ section.settings.eCard1-img4 | img_url: 'large' }}" alt="">
+                      </div>
+                      <div class="card-img-overlay d-flex align-items-end text-center">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3 class="font-weight-bold text-white">{{ section.settings.eCard1-title4 }}</h3>
+                          </div>
+    
+                          <div class="card-text">
+                            <h5 class="text-muted text-white">{{ section.settings.eCard1-price4 }}</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="text-center mt-lg-4 mt-2">
+            <button class="page-button button-bg1">{{ section.settings.eButton1-button1 }}</button>
+        </div>
+
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "ecommerce 1",
+	"max_blocks": 3,
+  "settings": [
+  {
+    "id": "ecommerce1-title1",
+    "type": "text",
+    "label": "Ecomerce 1 Title",
+    "default": "Our Products"
+  },
+  {
+    "type": "image_picker",
+    "id": "eCard1-img1",
+    "label": "eCard Image 1"
+  },
+  {
+    "id": "eCard1-title1",
+    "type": "text",
+    "label": "Title",
+    "default": "Zara Shirt"
+  },
+  {
+    "id": "eCard1-price1",
+    "type": "text",
+    "label": "Price",
+    "default": "Php. 1,000.00"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "eCard1-img2",
+    "label": "eCard Image 1"
+  },
+  {
+    "id": "eCard1-title2",
+    "type": "text",
+    "label": "Title",
+    "default": "Zara Shirt"
+  },
+  {
+    "id": "eCard1-price2",
+    "type": "text",
+    "label": "Price",
+    "default": "Php. 1,000.00"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "eCard1-img3",
+    "label": "eCard Image 1"
+  },
+  {
+    "id": "eCard1-title3",
+    "type": "text",
+    "label": "Title",
+    "default": "Zara Shirt"
+  },
+  {
+    "id": "eCard1-price3",
+    "type": "text",
+    "label": "Price",
+    "default": "Php. 1,000.00"
+  },
+
+  {
+    "type": "image_picker",
+    "id": "eCard1-img4",
+    "label": "eCard Image 1"
+  },
+  {
+    "id": "eCard1-title4",
+    "type": "text",
+    "label": "Title",
+    "default": "Zara Shirt"
+  },
+  {
+    "id": "eCard1-price4",
+    "type": "text",
+    "label": "Price",
+    "default": "Php. 1,000.00"
+  },
+  {
+    "id": "eButton1-button1",
+    "type": "text",
+    "label": "Button Text",
+    "default": "Button"
+  }
+  ],
+
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Add New Section",
+      "settings": [
+       
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ecommerce 1",
+      "category": "Blog",
+      "blocks": [
+        { 
+          "type": "select"
+        }
+       
+      ]
+    }
+  ]
+}
+{% endschema %}

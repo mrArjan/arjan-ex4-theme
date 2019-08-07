@@ -1,0 +1,195 @@
+<div class="container-fluid bg-container mt-5 blog5">
+    <div class="container">
+        <div class="text-left">
+            <h1 class="font-weight-bold animated bounce delay-2s">
+                    {{ section.settings.title-text-blog5}}
+            </h1>
+        </div>
+
+        <div class=" row d-flex justify-content-center">
+            <div class="col-lg-7 col-md-7 col-sm-5 col-xs-12 d-flex flex-column">
+                
+                    <div class="card mb-2 d-flex justify-content-center m-lg-4 m-md-1">
+                      <div class="card-wrap d-flex justify-column">
+                        <div class="card-img-top col-lg-6 col-md-6 col-sm-6  p-0 flex-sm-wrap"> <img src="{{ section.settings.card-img1 | img_url: 'large' }}" alt=""></div>
+                        <div class="card-body">
+                            <div class="card-label1"><h5 class="card-label">{{ section.settings.blog5-label1 }}</h5></div>
+                          <div class="card-title">
+                            <h4 class="font-weight-bold">
+                                {{ section.settings.blog5-title1 }}
+                            </h4>
+                          </div>
+                          <div class="card-text" style="overflow: hidden;">
+                            <h5>{{ section.settings.blog5-description1 }}</h5>
+                          </div>
+
+                          <div class="card-button"><h5><u class="text-muted">See all</u></h5></div>
+                        </div>
+                      </div>
+                    </div>
+               
+
+                    
+                    <div class="card mb-2 d-flex justify-content-center m-lg-4 m-md-1">
+                      <div class="card-wrap d-flex justify-column">
+                        <div class="card-img-top col-lg-6 col-md-6 col-sm-6  p-0 flex-sm-wrap"> <img src="{{ section.settings.card-img2 | img_url: 'large' }}" alt=""></div>
+                        <div class="card-body">
+                            <div class="card-label1"><h5 class="card-label">{{ section.settings.blog5-label2 }}</h5></div>
+                          <div class="card-title">
+                            <h4 class="font-weight-bold">
+                                {{ section.settings.blog5-title2 }}
+                            </h4>
+                          </div>
+                          <div class="card-text" style="overflow: hidden;">
+                            <h5>{{ section.settings.blog5-description2 }}</h5>
+                          </div>
+
+                          <div class="card-button"><h5><u class="text-muted">See all</u></h5></div>
+                        </div>
+                      </div>
+                    </div>
+               
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 mt-lg-4 mt-xl-2">
+                <div class="card mt-2">
+                      <div class="card-img-top p-0 m-0 "> <img src="{{ section.settings.card-img3 | img_url: 'large' }}" alt=""></div>
+                      <div class="card-body px-3">
+                          <div class="card-label1"><h5 class="card-label">{{ section.settings.blog5-label3 }}</h5></div>
+                        <div class="card-title">
+                          <h4 class="font-weight-bold">
+                              {{ section.settings.blog5-title3 }}
+                          </h4>
+                        </div>
+                        <div class="card-text">
+                          <h5>{{ section.settings.blog5-description3 }}</h5>
+                        </div>
+                        <div class="card-button"><h5><u class="text-muted">See all</u></h5></div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+   {% schema %}
+   {
+     "name": "Blog 5",
+       "max_blocks": 4,
+     "settings": [
+       {
+         "id": "title-text-blog5",
+         "type": "text",
+         "label": "Blog Title",
+         "default": "Title"
+       },
+         {
+           "type": "image_picker",
+           "id": "card-img1",
+           "label": "Card Image 1"
+         },
+         {
+          "id": "blog5-label1",
+          "type": "text",
+          "label": "Label",
+          "default": "Label"
+        },
+        {
+             "id": "blog5-title1",
+             "type": "text",
+             "label": "Blog Title ",
+             "default": "Title"
+        },
+         {
+           "id": "blog5-description1",
+           "type": "text",
+           "label": "Blog Description  ",
+           "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde delectus commodi!"
+         },
+         {
+           "type": "image_picker",
+           "id": "card-img2",
+           "label": "Card Image 1"
+         },
+         {
+          "id": "blog5-label2",
+          "type": "text",
+          "label": "Label",
+          "default": "Label"
+        },
+         {
+             "id": "blog5-title2",
+             "type": "text",
+             "label": "Blog Title ",
+             "default": "Title"
+         },
+         {
+           "id": "blog5-description2",
+           "type": "text",
+           "label": "Blog Description  ",
+           "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde delectus commodi!"
+         }
+   
+
+         
+         ,
+         {
+           "type": "image_picker",
+           "id": "card-img3",
+           "label": "Card Image 1"
+         },
+         {
+          "id": "blog5-label3",
+          "type": "text",
+          "label": "Label",
+          "default": "Label"
+        },
+         {
+             "id": "blog5-title3",
+             "type": "text",
+             "label": "Blog Title ",
+             "default": "Title"
+         },
+         {
+           "id": "blog5-description3",
+           "type": "text",
+           "label": "Blog Description  ",
+           "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde delectus commodi!"
+         }
+   
+         
+     ],
+   
+     "blocks": [
+       {
+         "type": "select",
+         "name": "Add New Section",
+         "settings": [
+        
+   
+         ]
+       }
+     ],
+     "presets": [
+       {
+         "name": "Blog 5",
+         "category": "Blog",
+         "blocks": [
+       
+          
+         ]
+       }
+     ]
+   }
+   {% endschema %}
